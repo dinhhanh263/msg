@@ -1,0 +1,12 @@
+[2021-05-11 16:41:51] local.INFO: Query Time:1665.2s] select * from `mail_send_result` left join `mail_template` on `mail_send_result`.`template_id` = `mail_template`.`id` where `mail_send_result`.`reg_date` between ? and ? and `mail_template`.`group_cd` = ? group by `mail_send_result`.`request_id` order by `mail_send_result`.`reg_date` desc limit 5  
+[2021-05-11 16:42:04] local.INFO: Query Time:1509.26s] select * from `mail_send_result` left join `mail_template` on `mail_send_result`.`template_id` = `mail_template`.`id` where `mail_send_result`.`request_id` = ?  
+[2021-05-11 16:42:24] local.INFO: Query Time:1514.56s] select count(*) as aggregate from `mail_template`  
+[2021-05-11 16:42:24] local.INFO: Query Time:236.71s] select * from `mail_template` order by `updated_at` desc limit 10 offset 0  
+[2021-05-11 16:42:31] local.INFO: Query Time:1708.15s] select * from `mail_template` where `del_flg` = ? and `send_type` in (?, ?)  
+[2021-05-11 16:42:31] local.INFO: Query Time:221.6s] select * from `upload_file_list` where `del_flg` = ? order by `edit_date` desc  
+[2021-05-11 16:43:09] local.INFO: Query Time:1914.81s] select * from `mail_template` where `del_flg` = ? and `send_type` in (?, ?)  
+[2021-05-11 16:43:09] local.INFO: Query Time:231.1s] select * from `upload_file_list` where `del_flg` = ? order by `edit_date` desc  
+[2021-05-11 16:43:09] local.INFO: Query Time:219.75s] select * from `mail_template` where `del_flg` = ? and `send_type` = ?  
+[2021-05-11 17:02:45] local.INFO: Query Time:2216.94s] select * from `mail_template` where `del_flg` = ? and `send_type` in (?, ?)  
+[2021-05-11 17:02:46] local.INFO: Query Time:214.77s] select * from `upload_file_list` where `del_flg` = ? order by `edit_date` desc  
+[2021-05-11 17:02:46] local.INFO: Query Time:218.09s] select * from `mail_template` where `id` = ? and `del_flg` = ?  
